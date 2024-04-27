@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TABELA IMC</title>
+</head>
+<body>
+    <div id="Principal">
+        <h1>Calculadora de IMC</h1>
+        <section id="Form">
+            <div class="inputs" id="i1">
+                <input type="text" id="PESO" placeholder="PESO" value=""/>
+                <input type="text" id="ALTURA" placeholder="ALTURA" value=""/>
+            </div>
+            <div class="inputs" id="i2">
+                <span>
+                    <input type="radio" name="sexo" class="sexo"  value="M"/>
+                    <h3>Masculino</h3>
+                </span>
+                <span>
+                    <input type="radio" name="sexo"  class="sexo" value="F"/>
+                    <h3>Feminino</h3>
+                </span>
+            </div>
+            <div id="Bts">
+                <button class="Bt" id="limp">Limpar</button>
+                <button class="Bt" id="calc">Calcular</button>
+            </div>
+        </section>
+        <hr/>
+        <div id="Resultado">
+            <h1>Resultado:</h1>
+            <span>
+                <h2>IMC:</h2><h2 id="imcRes">IMC</h2>
+            </span>
+            <span>
+                <h2>GRAU:</h2><h2 id="GrauRes">Grau</h2>
+            </span>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>

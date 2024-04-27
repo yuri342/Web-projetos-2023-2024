@@ -1,0 +1,166 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(78, 58, 180);
+  background: linear-gradient(
+    0deg,
+    rgba(78, 58, 180, 1) 4%,
+    rgba(29, 135, 253, 1) 69%,
+    rgba(69, 177, 252, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kode Mono", monospace;
+}
+
+#calculadora {
+  width: 348px;
+  height: 650px;
+  background-color: rgb(68, 68, 68);
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+#visor {
+  background-color: rgb(87, 84, 84);
+  height: fit-content;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 7%;
+  padding-right: 2%;
+}
+#visor > h1 {
+  width: 100%;
+  height: 100%;
+  font-size: 4em;
+  text-align: end;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  padding-inline-start: 0px;
+  margin-block-start: 1em;
+  margin-block-end: 0em;
+}
+
+#Row1 > li, #Row2 > li, #Row3 >li, #Row4 > li, #Row5 > li{
+  margin-inline: 1%;
+}
+
+#Row1,
+#Row2,
+#Row3,
+#Row4,
+#Row5 {
+  display: flex;
+}
+
+#Row1 {
+  margin-block-start: 2.5em;
+  justify-content: space-between;
+}
+
+#Row5 {
+  align-items: end;
+}
+
+#G {
+  visibility: hidden;
+}
+
+button {
+  all: unset;
+  width: 100%;
+  height: 100%;
+}
+
+.tipo1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(56, 56, 56);
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+  box-shadow: rgb(34, 27, 28) 0px 10px 0px 0px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.tipo1:hover {
+  box-shadow: rgb(185, 244, 255) 0px 7px 0px 0px;
+}
+
+.tipo1:active {
+  background-color: rgb(34, 34, 34);
+  /*50, 168, 80*/
+  box-shadow: rgb(0, 247, 255) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 100ms;
+}
+
+.tipo2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(95, 95, 95);
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+  box-shadow: rgb(54, 54, 54) 0px 10px 0px 0px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.tipo2:hover {
+  box-shadow: rgb(185, 201, 255) 0px 7px 0px 0px;
+}
+
+.tipo2:active {
+  background-color: rgb(34, 34, 34);
+  /*50, 168, 80*/
+  box-shadow: rgb(0, 247, 255) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 100ms;
+}
+
+.tipo3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(177, 117, 233);
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+  box-shadow: rgb(54, 54, 54) 0px 10px 0px 0px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.tipo3:hover {
+  box-shadow: rgb(147, 100, 255) 0px 7px 0px 0px;
+}
+
+.tipo3:active {
+  background-color:  rgb(124, 82, 163);
+  /*50, 168, 80*/
+  box-shadow: rgb(107, 70, 240) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 100ms;
+}
+
+
+.tipo1,.tipo2,.tipo3{
+  width: 80px;
+  height: 80px;
+  font-size: 2em;
+}

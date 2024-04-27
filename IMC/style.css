@@ -1,0 +1,131 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background: rgb(102, 147, 122);
+  background: linear-gradient(
+    52deg,
+    rgba(102, 147, 122, 1) 0%,
+    rgba(9, 119, 121, 1) 36%,
+    rgba(0, 84, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+span {
+  display: flex;
+  align-items: center;
+  justify-self: flex-start;
+  flex-wrap: nowrap;
+}
+
+#Principal {
+  width: 500px;
+  height: fit-content;
+  backdrop-filter: blur(0px) saturate(200%);
+  -webkit-backdrop-filter: blur(0px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.65);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 1%;
+}
+
+.inputs {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: flex-start;
+  align-content: normal;
+}
+
+.inputs > input {
+  width: 95%;
+  height: 25px;
+  border-radius: 20px;
+  border: 0;
+  padding-left: 10%;
+  margin-top: 2%;
+}
+
+#i2 {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#i2 > span {
+  margin-top: 1.5%;
+}
+
+#Bts{
+    width: 100%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+}
+
+#TabelaDiv{
+    display: flex;
+    justify-content: center;
+}
+
+#Resultado{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: normal;
+    padding: 3%;
+    display: none;
+}
+
+.Bt{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 40px;
+    width: 85px;
+    border: 0px solid;
+    background-color: rgba(255, 255, 255);
+    border-radius: 20px;
+    color: rgb(54, 54, 54);
+    border-radius: 50prgba(255, 255, 255, 0.56);
+    transition: 0.6s all;
+}
+
+.Bt:hover{
+    transition: 100ms;
+}
+
+.Bt:active{
+    transform: scale(0.95);
+    transition: 0.1s;
+}
+
+#Form {
+  display: flex;
+}
+
+h1 {
+  margin-bottom: 3%;
+}
+
+span > h3 {
+  margin: 0%;
+  margin-top: 1%;
+}
+
+#Resultados {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#Resultados > span > h2 {
+  padding-left: 3%;
+  margin: 0%;
+}
