@@ -1,0 +1,101 @@
+section {
+  background-color: aqua;
+  width: 20vw;
+  height: 25vh;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: space-around;
+}
+
+.Rodape1 {
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(59, 59, 59);
+  border-radius: 1em;
+  color: white;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Span1 BtArea"
+    "Span2 BtArea";
+}
+
+.CardTitulo {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin: 2%;
+  font-size: 1em ;
+  grid-area: Span1;
+  justify-self: center;  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.CardTitulo > h2 {
+  margin-left: 2%;
+}
+
+.Cardinfo1{
+  grid-area: Span2;
+}
+
+.CardinfoUl {
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 5%;
+}
+
+.CiLi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(17, 17, 17);
+  margin-inline: 5%;
+}
+
+.CiLi > h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.Estrelas {
+  padding-inline-start: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  margin-inline: 2%;
+}
+
+.BtArea{
+  grid-area: BtArea;
+}

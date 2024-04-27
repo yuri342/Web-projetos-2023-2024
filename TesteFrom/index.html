@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obter Valor do Input</title>
+    <!-- Se você tiver um arquivo CSS, você pode vinculá-lo aqui -->
+</head>
+<body>
+
+    <label for="meuInput">Digite algo:</label>
+    <input type="text" id="meuInput">
+    <button onclick="obterValorDoInput()">Obter Valor</button>
+
+    <script>
+        function obterValorDoInput() {
+            // Obter o valor do input pelo ID
+            var valorInput = document.getElementById('meuInput').value;
+
+            // Fazer algo com o valor (neste caso, apenas exibir no console)
+            console.log('Valor do Input:', valorInput);
+        }
+    </script>
+
+    <!-- Se você tiver um arquivo JS externo, você pode vinculá-lo aqui -->
+
+</body>
+</html>

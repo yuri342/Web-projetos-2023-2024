@@ -1,0 +1,86 @@
+html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(73,73,73,1) 100%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Tit{
+    display: flex;
+    background-color: rgb(44, 44, 44);
+    justify-content: center;
+    margin: auto;
+}
+
+#Tit2{
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+#Form{
+    background-color: rgb(59, 59, 59);
+    color: aliceblue;
+    height: 100%;
+    width: 120%;
+    box-shadow: white, white, white;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+ /*Form1*/
+#Form1 {
+    display: grid;
+    grid-template-rows: repeat(3, 25px);
+    grid-template-columns: repeat(, 1fr);
+    background-color: black;
+    padding: 2%;
+    border-radius: 5px;
+    margin: 3%;
+}
+
+#Form1 > label{
+    grid-column: 1 / 1;
+    font-size: 20px;
+}
+
+#i1{
+    grid-column: 2 / 2;
+}
+
+#i2{
+    grid-column: 2 / 2;
+}
+ /*Form1*/
+
+
+ /*Form2*/
+ #Form2{
+    display: flex;
+    background-color: black;
+    margin: 2%;
+    padding: 2%;
+    font-size: large;
+    border-radius: 3%;
+    justify-content: center;
+    justify-content: space-around;
+ }
+ /*Form2*/
+
+/*Form3*/
+#Form3{
+    display: flex;
+    background-color: black;
+    width: fit-content;
+    padding: 1%;
+    border-radius: 9%;
+    font-size: 20px;
+    align-items: start;
+}
+
+/*Form3*/

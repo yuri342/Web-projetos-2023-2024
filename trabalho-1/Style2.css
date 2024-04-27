@@ -1,0 +1,68 @@
+html{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(80, 9, 16, 0.692) 100%);
+    background-color: black;
+    padding: 1%;
+    color: rgb(247, 247, 247);
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+}
+
+.Cardapio{
+    position: relative;
+    justify-content: center;
+    padding: 1%;
+    background-color: rgb(70, 70, 70);;
+    border-radius: 15px;
+    height: 580px;
+    width: 1120px;
+}
+
+.S{
+    padding: 1%;
+    height: 400px;
+    width:1090px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(56, 56, 56);
+    border-radius: 15px;
+}
+
+.card_img1{
+    background-color: rgb(0, 0, 0);
+    height: 400px;
+    width: 500px;
+    background-size: cover;
+    border-radius: 30px;
+
+}
+
+.F1{
+    background-image: url("FRANGO.jpg");
+    background-position-y: 2000px;
+}
+
+.Lista{
+    font-size: 45px;
+    position: relative;
+    left: 25px;
+    justify-self: space-around;  
+
+
+}
+
+#title_2{
+    text-shadow: 0 0 5px #b60303, 0 0 15px #c9301c, 0 0 20px #832a13, 0 0 40px #570603, 0 0 10px #ff00007c, 0 0 98px #ff00007e;
+    padding-left: 10px;
+    font-size: 50px;
+}
+
+#Contato{
+    position: relative;
+    bottom: -100px;
+}
+
+#TT{
+    font-size: 60px;
+}

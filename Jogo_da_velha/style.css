@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(65, 0, 115, 1) 50%,
+    rgba(0, 58, 176, 1) 100%
+  );
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". g ."
+    "f . .";
+  justify-items: center;
+  align-items: center;
+}
+
+.jogo_da_velha {
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  grid-area: g;
+}
+
+#Linha_1,
+#Linha_2,
+#Linha_3 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.BJV {
+  border-style: none;
+  width: 15vmin;
+  height: 15vmin;
+  border-radius: 5%;
+  cursor: pointer;
+  margin-inline: 0;
+  margin-bottom: 0;
+  background-color: rgb(255, 255, 255, 0);
+  transition: 1s ease-out;
+}
+
+.BJV:hover {
+  background-color: rgb(255, 255, 255, 0.1);
+  filter: blur(1rem);
+}
+
+.DivT {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vmin;
+  width: 20vmin;
+}
+
+.RowA {
+  border-bottom: 8px white solid;
+}
+
+.RowB {
+  border-right: 8px white solid;
+}
+
+#O {
+  width: 55%;
+  height: 55%;
+  background-color: rgb(255, 255, 255, 0);
+  border-radius: 50%;
+  border-width: 1vmin;
+  border-color: white;
+  border-style: solid;
+}
+
+.x {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+}
