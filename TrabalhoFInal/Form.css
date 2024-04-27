@@ -1,0 +1,305 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #fff4e7;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #dfb97d #fff4e7;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff4e7;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #dfb97d;
+  border-radius: 10px;
+  border: 3px solid #fff4e7;
+}
+
+/* Estilo Geral do Header */
+header {
+  width: 100%;
+  height: fit-content;
+  background-color: #342623;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+}
+
+/* Estilo do Logotipo e Título */
+#TituloLogoDiv {
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans Kawi", sans-serif;
+  text-decoration: none;
+  font-size: 1vw;
+}
+
+#TituloLogoDiv > div > p {
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: normal;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  font-size: 1vw;
+  line-height: 1vw;
+  width: 60%;
+}
+
+#TituloLogoDiv > img {
+  width: 3vw;
+  height: 15%;
+  object-fit: fill;
+  margin: 1px;
+}
+
+/* Estilo do Menu Hover (Parece não estar sendo usado) */
+#menuHover {
+  display: none;
+  position: absolute;
+}
+
+/* Estilo da Lista de Menu no Cabeçalho */
+#MenuHeader {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: normal;
+}
+
+/* Estilos dos Botões e Ícones */
+hr {
+  margin: 0;
+  background-color: #226104;
+  border: solid #226104;
+  height: 0.3vh;
+}
+
+.MHli {
+  color: white;
+}
+
+.MHli > p {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.MHliSvg {
+  width: fit-content;
+  height: fit-content;
+}
+
+.MHliSvg > a {
+  width: fit-content;
+  height: fit-content;
+}
+
+.MHliS {
+  margin-inline: 3%;
+}
+
+#IconLoc {
+  object-fit: none;
+  height: 1.9vh;
+  object-fit: cover;
+}
+
+#locDiv {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MhliBotao {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1vw;
+}
+
+.MhliBotao:hover {
+  transition: all 500ms ease 0s;
+  cursor: pointer;
+}
+
+.MhliBotao::after {
+  content: "";
+  display: block;
+  background-color: transparent;
+  border-bottom: #f0ad4a solid 3px;
+  width: 0;
+  transition: all 500ms ease 0s;
+  margin-top: 0;
+}
+
+.MhliBotao:hover::after {
+  width: 100%;
+  content: "";
+  display: block;
+}
+
+.MhliBotao:active {
+  transition: all 100ms ease 0s;
+  color: rgb(255, 201, 99);
+}
+
+.MhliBL:hover {
+  cursor: pointer;
+}
+
+/* Estilo do Submenu (HoverMenu) */
+.HoverMenu {
+  list-style: none;
+  position: absolute;
+  display: none;
+  background-color: #342623;
+  width: 3vw;
+  color: white;
+  border-radius: 15px;
+  margin-top: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+  padding: 1%;
+  margin-top: 0.5vh;
+  border: 3px solid green;
+  font-size: 0.6vw;
+}
+
+/* Exibição do Submenu ao passar o mouse no botão */
+.HoverMenuB:hover + .HoverMenu {
+  animation: HoMa 300ms ease 0s;
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  transition-delay: 0s;
+}
+
+/* Exibição do Submenu ao passar o mouse diretamente no submenu */
+.HoverMenu:hover {
+  display: block;
+  opacity: 1;
+}
+
+/* Estilos para Links no Submenu (HvmA) */
+.HvmA::after {
+  margin-top: 0px;
+  content: "";
+  display: block;
+  background-color: transparent;
+  border-bottom: rgb(248, 204, 8) solid 2px;
+  width: 0;
+  transition: all 500ms ease 0s;
+}
+
+.HvmA:hover::after {
+  width: 100%;
+  content: "";
+  display: block;
+}
+
+.HvmA {
+  text-decoration: none;
+  color: white;
+  font-family: "Noto Sans Kawi", sans-serif;
+  margin-bottom: 0px;
+}
+
+.HvmA:hover {
+  transition: all 1s ease 0s;
+  color: rgb(255, 185, 127);
+}
+
+/* Animação do Submenu (HoMa) */
+@keyframes HoMa {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+.styled-form > h1{
+    font-size: 2vw;
+    margin-block-end: 2% ;
+    margin-block-start: 0 ;
+}
+
+.styled-form {
+  width: 45vw;
+  height: fit-content;
+  background-color: #342623;
+  border: 5px solid #f0ad4a;
+  border-radius: 50px;
+  color: white;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 2px solid #f0ad4a;
+  border-radius: 10px;
+  background-color: #342623;
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  height: 150px; /* Altura desejada em pixels */
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 2px solid #f0ad4a;
+  border-radius: 10px;
+  background-color: #342623;
+  color: white;
+}
+
+#BotaoForm {
+  background-color: #f0ad4a;
+  color: #342623;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#BotaoForm:hover {
+  background-color: #d9534f;
+}

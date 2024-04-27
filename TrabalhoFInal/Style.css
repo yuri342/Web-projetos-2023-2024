@@ -1,0 +1,644 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #fff4e7;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #dfb97d #fff4e7;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff4e7;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #dfb97d;
+  border-radius: 10px;
+  border: 3px solid #fff4e7;
+}
+
+/* Estilo Geral do Header */
+header {
+  width: 100%;
+  height: fit-content;
+  background-color: #342623;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+}
+
+/* Estilo do Logotipo e Título */
+#TituloLogoDiv {
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans Kawi", sans-serif;
+  text-decoration: none;
+  font-size: 1vw;
+}
+
+#TituloLogoDiv > div > p {
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: normal;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  font-size: 1vw;
+  line-height: 1vw;
+  width: 60%;
+}
+
+#TituloLogoDiv > img {
+  width: 3vw;
+  height: 15%;
+  object-fit: fill;
+  margin: 1px;
+}
+
+/* Estilo do Menu Hover (Parece não estar sendo usado) */
+#menuHover {
+  display: none;
+  position: absolute;
+}
+
+/* Estilo da Lista de Menu no Cabeçalho */
+#MenuHeader {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: normal;
+}
+
+/* Estilos dos Botões e Ícones */
+hr {
+  margin: 0;
+  background-color: #226104;
+  border: solid #226104;
+  height: 0.3vh;
+}
+
+.MHli {
+  color: white;
+}
+
+.MHli > p {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.MHliSvg {
+  width: fit-content;
+  height: fit-content;
+}
+
+.MHliSvg > a {
+  width: fit-content;
+  height: fit-content;
+}
+
+.MHliS {
+  margin-inline: 3%;
+}
+
+#IconLoc {
+  object-fit: none;
+  height: 1.9vh;
+  object-fit: cover;
+}
+
+#locDiv {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MhliBotao {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1vw;
+}
+
+.MhliBotao:hover {
+  transition: all 500ms ease 0s;
+  cursor: pointer;
+}
+
+.MhliBotao::after {
+  content: "";
+  display: block;
+  background-color: transparent;
+  border-bottom: #f0ad4a solid 3px;
+  width: 0;
+  transition: all 500ms ease 0s;
+  margin-top: 0;
+}
+
+.MhliBotao:hover::after {
+  width: 100%;
+  content: "";
+  display: block;
+}
+
+.MhliBotao:active {
+  transition: all 100ms ease 0s;
+  color: rgb(255, 201, 99);
+}
+
+.MhliBL:hover {
+  cursor: pointer;
+}
+
+/* Estilo do Submenu (HoverMenu) */
+.HoverMenu {
+  list-style: none;
+  position: absolute;
+  display: none;
+  background-color: #342623;
+  width: 3vw;
+  color: white;
+  border-radius: 15px;
+  margin-top: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+  padding: 1%;
+  margin-top: 0.5vh;
+  border: 3px solid green;
+  font-size: 0.6vw;
+}
+
+/* Exibição do Submenu ao passar o mouse no botão */
+.HoverMenuB:hover + .HoverMenu {
+  animation: HoMa 300ms ease 0s;
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  transition-delay: 0s;
+}
+
+/* Exibição do Submenu ao passar o mouse diretamente no submenu */
+.HoverMenu:hover {
+  display: block;
+  opacity: 1;
+}
+
+/* Estilos para Links no Submenu (HvmA) */
+.HvmA::after {
+  margin-top: 0px;
+  content: "";
+  display: block;
+  background-color: transparent;
+  border-bottom: rgb(248, 204, 8) solid 2px;
+  width: 0;
+  transition: all 500ms ease 0s;
+}
+
+.HvmA:hover::after {
+  width: 100%;
+  content: "";
+  display: block;
+}
+
+.HvmA {
+  text-decoration: none;
+  color: white;
+  font-family: "Noto Sans Kawi", sans-serif;
+  margin-bottom: 0px;
+}
+
+.HvmA:hover {
+  transition: all 1s ease 0s;
+  color: rgb(255, 185, 127);
+}
+
+/* Animação do Submenu (HoMa) */
+@keyframes HoMa {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* Estilo Banner */
+#Banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: normal;
+  align-content: normal;
+}
+
+.BannerArea {
+  width: 75%;
+  height:80vh;
+  background-color: rgb(0, 0, 0) transparent;
+  background-size: 68vw  100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+
+.BannerButton {
+  width: 5%;
+  height: 10%;
+  background-image: url("caret-right-fill.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+}
+
+#BB1 {
+  scale: -1;
+}
+
+.BannerButton:hover {
+  cursor: pointer;
+}
+
+/* Estilo Banner */
+
+/* Estilo Do Sobre */
+#Sobre {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#Sobre > div {
+  width: 40vw;
+  height: fit-content;
+  background-color: #342623;
+  border: 5px solid #f0ad4a;
+  border-radius: 50px;
+  color: white;
+  padding: 2%;
+}
+
+#Sobre > div > h1 {
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 4vw;
+  text-align: center;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.4em;
+  color: #dfb97d;
+}
+
+#Sobre > div > p {
+  font-family: "Hammersmith One", sans-serif;
+  text-align: justify;
+  font-size: 1vw;
+}
+
+/* Estilo Do Sobre */
+
+/* Estilo Do MenuCards */
+
+.ListaCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: normal;
+}
+
+.Card {
+  width: 30vw;
+  height: 35vh;
+  border-radius: 15px;
+  background-color: #42403a;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: stretch;
+}
+
+.CardStats {
+  background-color: #105750;
+  height: fit-content;
+  width: 100vw;
+  height: fit-content;
+  padding: 3%;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 0.1fr 0.01fr;
+  grid-auto-columns: 0.5fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Span1 BtArea"
+    "Span2 BtArea";
+}
+
+.Span1 {
+  grid-area: Span1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: normal;
+}
+
+.Span1 > h1,
+h2 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  font-size: 1.6vw;
+  margin-inline-end: 3%;
+}
+
+.Span1 > h1 {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1vw;
+  letter-spacing: 0.1vh;
+}
+
+.Span1 > h2 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: 0.85vw;
+  color: #dfb97d;
+}
+
+.Span2 {
+  grid-area: Span2;
+  margin-top: 1%;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6vw;
+}
+
+.ListaInfo {
+  list-style: none;
+  padding-inline-start: 0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  font-family: "Hammersmith One", sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.ListaInfoLi {
+  height: fit-content;
+  width: 6vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: normal;
+}
+
+.ListaInfoLi > img {
+  width: 1.3vw;
+  height: 20%;
+}
+
+.SpanListaInfo {
+  height: fit-content;
+  width: 5.7vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: normal;
+}
+
+.SpanListaInfo > h3 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  width: fit-content;
+  height: fit-content;
+  font-size: 0.7vw;
+  text-align: start;
+  font-family: "Hammersmith One", sans-serif;
+  color: white;
+  margin-left: 2%;
+}
+
+.Estrelas {
+  list-style: none;
+  padding-inline-start: 0;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: normal;
+}
+
+.EstrelasLi {
+  width: fit-content;
+  height: fit-content;
+}
+
+.EstrelasLi > img {
+  width: 1vw;
+  height: fit-content;
+}
+
+.BtArea {
+  grid-area: BtArea;
+  justify-self: center;
+  align-self: center;
+}
+
+.BtAreaBt {
+  width: 8vw;
+  height: 4%;
+  background-color: #c62d16;
+  border-radius: 1vh;
+  border: none;
+  color: #dfb97d;
+}
+
+.BtAreaBt > h3 {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  font-size: 1vw;
+  transition: all 300ms ease-out 0s;
+}
+
+.BtAreaBt:hover {
+  text-shadow: 1px 1px 19px rgb(255, 238, 0);
+}
+
+.BtAreaBt:active {
+  background-color: rgb(160, 39, 20);
+  text-shadow: 1px 1px 19px rgb(255, 123, 0);
+}
+
+#Card1 {
+  background-image: url("TortaDeMorangoComCreme.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -10vw;
+}
+
+#Card2 {
+  background-image: url("CroassantDeChocolate.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -5vw;
+}
+
+#Card3 {
+  background-image: url("MassinhaComFarofa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -5vw;
+}
+
+#Card4 {
+  background-image: url("BoloChocolate-transformed\ \(1\).jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -5vw;
+}
+
+#Card5 {
+  background-image: url("Sanduíche.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Card6 {
+  background-image: url("BrownieNuts.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -5vw;
+}
+/* Estilo Do MenuCards */
+
+/*footer */
+/* Estilo para a seção "Sobre" no rodapé */
+footer {
+  margin-top: 3%;
+  display: flex;
+  margin-bottom: 4%;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* Permite que os elementos se ajustem à largura da tela */
+}
+
+/* Estilo para a div dentro da seção "Sobre" */
+footer > div {
+  width: 45vw;
+  height: fit-content;
+  background-color: #342623;
+  border: 5px solid #f0ad4a;
+  border-radius: 50px;
+  color: white;
+  padding: 2%;
+  margin-bottom: 2%; /* Adiciona espaço entre as divs */
+}
+
+/* Estilo para o título dentro da div */
+footer > div > h1 {
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 4vw;
+  text-align: start;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.4em;
+  color: #dfb97d;
+}
+
+/* Estilo para o parágrafo dentro da div */
+footer > div > p {
+  font-family: "Hammersmith One", sans-serif;
+  text-align: justify;
+  font-size: 1vw;
+}
+
+/* Estilo para o iframe dentro da seção "Sobre" */
+footer > iframe {
+  width: 40vw;
+  height: 36vh; /* Defina a altura desejada ou ajuste conforme necessário */
+  border: 5vw solid rgb(6, 71, 31);
+  border-radius: 50px; /* Adiciona espaço entre o iframe e a div */
+}
+
+/* Estilo para a lista de informações de contato no footer */
+footer > div > ul {
+  list-style-type: none; /* Remove os marcadores de lista */
+  padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+/* Estilo para cada item da lista no footer */
+footer > div > ul > li {
+  margin-bottom: 1em; /* Adiciona espaço entre os itens da lista */
+}
+
+/* Estilo para o título dentro de cada item da lista no footer */
+footer > div > ul > li > h3 {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.5vw;
+  color: #ffffff;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.4em;
+}
+
+.sombra {
+  transition: all 3s ease-in-out 0s;
+  animation: Border 2.5s forwards 0s;
+}
+
+@keyframes Border {
+  0%{
+    box-shadow: 0px 0px 12px 8px #DFB97D;
+  }
+
+  50%{    
+    box-shadow: 0px 0px 62px 40px #DFB97D;
+  }
+
+  100%{
+    box-shadow: 0px 0px 0px 5px #DFB97D;
+  }
+}
+/*footer */

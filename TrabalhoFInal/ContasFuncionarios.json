@@ -1,0 +1,12 @@
+{
+    "Contas": {
+      "Conta1": {
+        "Nome": "JoaoTeste1",
+        "Senha": "Teste123"
+      },
+        "Conta2": {
+        "Nome": "JoaoTeste2",
+        "Senha": "Teste456"
+    }
+    }
+  }

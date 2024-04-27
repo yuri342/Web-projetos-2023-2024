@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Form</title>
+  </head>
+  <body>
+    <section>
+      <form id="formulario">
+        <h1>Formulario Para Cadastro</h1>
+        <hr />
+        <ul>
+          <li class="li1">
+            <label for="nome">NOME:</label>
+            <input type="text" name="inputNome" id="nome" />
+          </li>
+          <li class="li1">
+            <label for="endereço">ENDEREÇO:</label>
+            <input type="email" name="inputEndereço" id="endereco" />
+          </li>
+          <li class="li1">
+            <label for="whatsapp">WHATSAPP:</label>
+            <input type="tel" id="whatsapp" />
+          </li>
+        </ul>
+        <hr />
+        <h2>-Curso Desejado-</h2>
+        <ul>
+          <li class="li2">
+            <label for="radio">EMPREENDEDORISMO:</label
+            ><input type="radio" name="radio" id="radio1" />
+          </li>
+          <li class="li2">
+            <label for="radio">ENERGIAS RENOVAVEIS:</label
+            ><input type="radio" name="radio" id="radio2" />
+          </li>
+          <li class="li2">
+            <label for="radio">MERCADO DE TRABALHO:</label
+            ><input type="radio" name="radio" id="radio3" />
+          </li>
+        </ul>
+        <hr />
+        <h2>-Turno Preferido-</h2>
+        <ul>
+          <li class="li3">
+            <label for="manha">MANHÃ:</label
+            ><input type="checkbox" name="manha" id="turnoManha" />
+          </li>
+          <li class="li3">
+            <label for="tarde">TARDE:</label
+            ><input type="checkbox" name="tarde" id="turnoTarde" />
+          </li>
+          <li class="li3">
+            <label for="noite">NOITE:</label
+            ><input type="checkbox" name="noite" id="turnoNoite" />
+          </li>
+        </ul>
+        <hr />
+        <h2>-Disponibilidade De Aulas-</h2>
+        <select name="-Disponibilidade_aulas-" id="DiA">
+          <option value="Precencial">Precencial</option>
+          <option value="Ead">EAD</option>
+          <option value="Hibrido">Hibrido</option>
+        </select>
+        <hr />
+        <h3>-Entre em contato com o formulario abaixo para duvidas-</h3>
+        <textarea></textarea><br />
+        <input type="submit" name="" id="enviar" value="Enviar" />
+        <input type="reset" name="" id="reset" value="Reset" />
+      </form>
+    </section>
+  </body>
+  <script src="app.js"></script>
+</html>

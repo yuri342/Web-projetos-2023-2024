@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  width: 100%;
+  height: 100vh;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(29, 173, 253, 1) 50%,
+    rgba(69, 91, 252, 1) 100%
+  );
+}
+
+section {
+  background-color: rgb(56, 56, 56);
+  color: white;
+  padding: 1%;
+  width: fit-content;
+  border-radius: 20px;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+h2,
+label,
+h3 {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+  display: list-item;
+}
+
+.li1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: normal;
+  align-content: normal;
+  width: 65%;
+}
+
+.li2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: normal;
+  align-content: normal;
+  width: 50%;
+}
+
+.li3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: normal;
+  align-content: normal;
+  width: 20%;
+}
+
+select {
+  margin-bottom: 1%;
+}
+
+textarea {
+  border: 2px solid rgb(32, 28, 28);
+  width: 95%;
+  height: 20vh;
+  resize: none;
+}
+
+#enviar,#reset{
+    color: white;
+    background-color: rgb(104, 104, 104);
+    margin-top: 5%;
+    margin-inline: 2%;
+    padding: 2%;
+    padding-inline: 5%;
+    border: none;   
+    border-radius: 5%;
+}

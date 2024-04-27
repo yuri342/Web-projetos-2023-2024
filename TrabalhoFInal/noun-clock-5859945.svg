@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/"
+    viewBox="0 0 32 34" version="1.1" xml:space="default" style="" x="0px" y="0px" fill-rule="evenodd"
+    clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" fill="#DFB97D">
+    <g transform="matrix(1,0,0,1,-432,-96)">
+        <g transform="matrix(1,0,0,1,0,-48)">
+            <path
+                d="M448,146C440.273,146 434,152.273 434,160C434,167.727 440.273,174 448,174C455.727,174 462,167.727 462,160C462,152.273 455.727,146 448,146ZM447,150.917L447,160.083C447,160.46 447.248,160.784 447.602,160.925L454.504,164.868C454.983,165.142 455.594,164.975 455.868,164.496C456.142,164.017 455.975,163.406 455.496,163.132L449,159.42L449,150.917C449,150.411 448.552,150 448,150C447.448,150 447,150.411 447,150.917Z" />
+        </g>
+    </g>
+</svg>
