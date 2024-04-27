@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style3.css" />
+    <!--LINK DAS FONTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="icons8-austria-color-96.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=Outfit:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>AUSTRIA</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="Nav_Menu">
+          <li class="Nav_LI"><a href="index.html">Principal</a></li>
+          <li class="Nav_LI"><a href="pag-2.html">Pagina-2</a></li>
+          <li class="Nav_LI"><a href="pag-3.html">Pagina-3</a></li>
+          <li class="Nav_LI"><a href="pag-4.html">Pagina-4</a></li>
+        </ul>
+      </nav>
+      <h1 id="Titulo_Principal">
+        AUSTRIA <span id="titulo_2">CULINÁRIA</span>
+      </h1>
+      <hr id="Linha" />
+    </header>
+    <!--sessao do cardapio-->
+    <section class="Cards">
+      <div class="Card-1">
+        <h1 id="Titulo_card">Salgados</h1>
+        <nav id="Titulo_UL">
+          <ul id="Menus">
+            <li class="MenuLi">
+              <button type="button" class="MenuButton1 MenuButton">
+                Käsekrainer
+              </button>
+            </li>
+            <li class="MenuLi">
+              <button type="button" class="MenuButton2 MenuButton">
+                Leberkäse
+              </button>
+            </li>
+            <li class="MenuLi">
+              <button type="button" class="MenuButton3 MenuButton">
+                Gulasch
+              </button>
+            </li>
+            <li class="MenuLi">
+              <button type="button" class="MenuButton4 MenuButton">
+                Knödel
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="Card-2">
+        <h1 id="Titulo_card">Doces</h1>
+        <nav id="Titulo_UL">
+          <ul id="Menus">
+            <li class="MenuLi">
+              <button type="button" class="MenuButton5 MenuButton">WIP</button>
+            </li>
+            <li class="MenuLi">
+              <button type="button" class="MenuButton6 MenuButton">WIP</button>
+            </li>
+            <li class="MenuLi">
+              <button type="button" class="MenuButton7 MenuButton">WIP</button>
+            </li>
+            <li class="MenuLi">
+              <button type="button" class="MenuButton8 MenuButton">WIP</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="Card-3">
+        <h1 id="Titulo_card">Bebidas</h1>
+        <nav id="Titulo_UL">
+          <ul id="Menus">
+            <li class="MenuLi">
+              <button type="button" class="MenuButton9 MenuButton">WIP</button>
+            </li>
+            <li class="MenuLi">
+              <button type="button" class="MenuButton10 MenuButton">WIP</button>
+            </li>
+            <li class="MenuLi">
+              <button type="button" class="MenuButton11 MenuButton">WIP</button>
+            </li>
+            <li class="MenuLi">
+              <button type="button" class="MenuButton12 MenuButton">WIP</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <div class="container Mostrador">
+      <div class="img-area img"></div>
+      <div class="text-area">
+        Käsekrainer: Käsekrainer é uma salsicha austríaca popular. A característica especial desta salsicha é o queijo derretido que está incorporado ao seu interior. 
+        É feita com carne de porco, carne de boi, bacon e uma mistura de temperos. Quando grelhada, o queijo dentro da salsicha derrete e cria um sabor delicioso e uma textura cremosa.
+      </div>
+    </div>
+    <script>
+      var container = document.querySelector(".container");
+      var botao1 = document.querySelector(".MenuButton1");
+      var botao2 = document.querySelector(".MenuButton2");
+      var botao3 = document.querySelector(".MenuButton3");
+      var botao4 = document.querySelector(".MenuButton4");
+      var erro = document.querySelector(".MenuButton");
+      var imagemContainer = document.querySelector(".img-area");
+      var paragrafo = document.querySelector(".text-area");
+
+      function sleep(ms) {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+        window.alert("clique em um botao!!!");
+      }
+
+      botao1.addEventListener("click", function () {
+        imagemContainer.style.backgroundImage = 'url("Käsekrainer.jpg")';
+        paragrafo.textContent =
+          "Käsekrainer: Käsekrainer é uma salsicha austríaca popular. A característica especial desta salsicha é o queijo derretido que está incorporado ao seu interior. É feita com carne de porco, carne de boi, bacon e uma mistura de temperos. Quando grelhada, o queijo dentro da salsicha derrete e cria um sabor delicioso e uma textura cremosa.";
+      });
+
+      botao2.addEventListener("click", function () {
+        imagemContainer.style.backgroundImage = 'url("Leberkäse.jpg")';
+        paragrafo.textContent =
+          "Leberkäse: Leberkäse é uma iguaria da culinária austríaca e da Baviera, na Alemanha. Apesar do nome, Leberkäse geralmente não contém fígado, como pode sugerir a tradução literal queijo de fígado. É uma mistura de carne de porco e carne de boi moídas com especiarias e ervas, que é cozida até ficar com uma crosta dourada por fora. É frequentemente servido como sanduíche ou acompanhamento em refeições.";
+      });
+
+      botao3.addEventListener("click", function () {
+        imagemContainer.style.backgroundImage = 'url("Gulasch.jpg")';
+        paragrafo.textContent =
+          "Gulasch: Gulasch é um prato tradicional da culinária húngara e austríaca, embora tenha se tornado popular em muitas partes da Europa. É um ensopado de carne cozido lentamente em um molho rico e temperado com páprica. A carne usada pode variar, mas é comum usar carne de boi ou porco. O Gulasch é frequentemente servido com batatas, macarrão ou pão..";
+      });
+
+      botao4.addEventListener("click", function () {
+        imagemContainer.style.backgroundImage = 'url("Knödel.jpg")';
+        paragrafo.textContent =
+          "Knödel: Knödel é uma palavra alemã que se refere a bolinhos de massa ou dumplings. Existem diferentes tipos de Knödel, como os de batata, pão ou farinha. Eles são cozidos e servidos como acompanhamento para vários pratos. Por exemplo, os Knödel de batata são frequentemente servidos com molho de carne ou ensopados, enquanto os Knödel de pão são populares em sopas ou como acompanhamento para pratos de carne.Käsekrainer.";
+      });
+
+      sleep(2000)
+    </script>
+  </body>
+</html>

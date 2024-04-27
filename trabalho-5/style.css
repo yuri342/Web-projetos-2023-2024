@@ -1,0 +1,310 @@
+:root {
+  --pR: 0%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(65, 65, 65, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+/*css da barra de rolagen usando webkit caso rodar em mozila teria que arrumar para -moz, Opera = -o e -ms para explorer.*/
+body::-webkit-scrollbar {
+  /*os dois pontos para especificar qual barra mudar caso tivese mais elementos que usasem de barra de rolagem. e é padrao especificar senão nao funciona*/
+  width: 12px; /* LARGURA DA SCROLLBAR */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(46, 46, 46); /* fundo da barra */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(
+    51,
+    51,
+    51
+  ); /* cor do element to que mexe quando a barra rola */
+  border-radius: 10px; /* borda do elemento */
+  border: 3px solid rgb(77, 77, 77); /* cor e estilo da borda */
+}
+
+/*fim do css da barra*/
+#NavBar {
+  /*Style do NAV-MENU*/
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: rgba(133, 133, 133, 0.35) 0px -50px 36px -28px inset;
+}
+
+#Navlista .navE {
+  position: relative;
+  display: inline-block;
+  margin-inline: 5px;
+}
+#Navlista .navE a {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+  display: inline;
+  /*Visual do LINk*/
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: rgba(184, 219, 252, 0.35) 0px -50px 36px -28px inset;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-bottom: 3px solid rgb(0, 0, 0);
+  margin-inline: 2px;
+  border-radius: 10px;
+}
+
+#Navlista .navE a:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: rgba(184, 219, 252, 0.8) 0px -50px 40px -30px inset;
+  transition: 300ms ease;
+}
+
+#titleNav {
+  font-size: 3rem;
+  display: inline;
+  color: white;
+  text-shadow: 0 0 5px #b60303, 0 0 15px #c9301c, 0 0 20px #832a13,
+    0 0 40px #570603, 0 0 10px #ff00007c, 0 0 98px #ff00007e;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-family: "UnifrakturMaguntia", cursive;
+}
+
+/*Style do NAV-MENU*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card {
+  color: white;
+  background: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: inset 0px -300px 100px -100px rgb(0, 0, 0);
+  width: 100vw;
+  height: 25vh;
+  margin-inline: 5%;
+  margin-top: 5%;
+  border-radius: 5%;
+}
+
+.imgFrame {
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+
+.img1 {
+  background-image: url("Type-57.png");
+  background-position-x: -5%;
+  background-position-y: 55%;
+  width: 100%;
+  height: 200px;
+}
+
+.img2 {
+  background-image: url("FordMutang.png");
+  background-position-x: -5%;
+  width: 100%;
+  height: 200px;
+}
+
+.img3 {
+  background-image: url("SUPRA2.png");
+  background-position-y: 45%;
+  height: 200px;
+  width: 100%;
+}
+
+.titleCard {
+  margin-left: 5%;
+  margin-top: 5%;
+  font-size: 3.5rem;
+}
+
+#titleCard1 {
+  font-family: "Dancing Script", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-family: "UnifrakturMaguntia", cursive;
+}
+
+#titleCard3 {
+  font-size: 3.5rem;
+}
+
+.Card:hover {
+  cursor: pointer;
+  transition: 1s ease;
+  background: rgb(0, 0, 0, 0);
+  box-shadow: inset 0px -300px 100px -100px rgb(131, 2, 2);
+}
+
+.carimg {
+  width: 50%;
+  height: 50%;
+}
+
+.container2 {
+  position: relative;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5fr 0.5fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "img-area STATS"
+    "TEXT-AREA STATS";
+  background-color: rgb(31, 31, 31);
+}
+
+.STATS {
+  display: grid;
+  grid-area: STATS;
+}
+
+.TEXT-AREA {
+  grid-area: TEXT-AREA;
+  background-color: gray;
+}
+
+.img-area {
+  grid-area: img-area;
+  background-color: aqua;
+}
+
+#Container12 {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+#Statslist {
+  border-radius: 5%;
+  background-color: #111111;
+  list-style: none;
+  display: inline;
+  margin: 3%;
+  padding: 2%;
+}
+
+.linhastats {
+  display: flex;
+  align-items: center;
+}
+#linhastats2 {
+  margin-top: 3%;
+}
+
+.titleStats {
+  margin: 0;
+  font-size: 50px;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  color: white;
+  font-family: "UnifrakturCook", cursive;
+}
+
+#Carname {
+  color: white;
+  position: relative;
+  text-align: center;
+  margin: 0;
+  font-size: 5rem;
+  font-family: "Dancing Script", cursive;
+  margin-top: 2%;
+  transition: all ease 1s;
+}
+
+.progress {
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+#bar1,#bar2,#bar3{
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #fff;
+  height: 30px;
+  width: 0%;
+  transition: all 0.3s ease-out;
+}
+
+.TEXT-AREA{
+  background-color: rgb(31, 31, 31);
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--pR);
+  }
+}
+
+@keyframes load2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animacao2{  animation: load2 3s normal forwards; transition: transform 3s ease-out; }
+.animacao{  animation: load 3s normal forwards;  transition: transform 3s ease;}
+
+iframe {
+  margin: 1%;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.img-area{
+  background-color: rgb(31, 31, 31);
+}
+
+#sobre{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  margin: 2%;
+  margin-bottom: 5%;
+  margin-bottom: 0;
+  color: white;
+  text-align: justify;
+  transition: all ease 1s;
+}

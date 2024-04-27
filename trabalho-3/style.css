@@ -1,0 +1,166 @@
+body{
+    background-color: black;
+    margin: 0;
+    background-image: url(pexels-mateusz-sałaciak-4275887.jpg);
+    background-size: cover;
+    height: 165vh;
+}
+/*css da barra de rolagen usando webkit caso rodar em mozila teria que arrumar para -moz, Opera = -o e -ms para explorer.*/
+body::-webkit-scrollbar {     /*os dois pontos para especificar qual barra mudar caso tivese mais elementos que usasem de barra de rolagem. e é padrao especificar senão nao funciona*/
+  width: 12px;               /* LARGURA DA SCROLLBAR */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(46, 46, 46);        /* fundo da barra */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(51, 51, 51);    /* cor do element to que mexe quando a barra rola */
+  border-radius: 10px;       /* borda do elemento */
+  border: 3px solid rgb(77, 77, 77);  /* cor e estilo da borda */
+}
+
+/*fim do css da barra*/
+/*Style do NAV-MENU*/
+
+ul{
+   padding: 0px;
+   margin: 0px;
+   list-style: none;
+   padding: 1rem;
+   background-color: rgba(0, 0, 0,0.9);
+   box-shadow: rgba(133, 133, 133, 0.35) 0px -50px 36px -28px inset;
+}
+
+ul li {
+  position: relative;
+  display: inline;
+}
+ul li a{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+  display: inline-block;
+  /*Visual do LINk*/
+  background-color: rgba(0, 0, 0,0.9);
+  box-shadow: rgba(184, 219, 252, 0.35) 0px -50px 36px -28px inset;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-bottom: 3px solid rgb(184, 219, 252);
+  margin-inline: 2px;
+  border-radius: 10px;
+}
+
+ul  li a:hover{
+  background-color: rgba(0, 0, 0,0.9);
+  box-shadow: rgba(184, 219, 252, 0.80) 0px -50px 40px -30px inset;
+  transition: 300ms ease;
+}
+/*Style do NAV-MENU*/
+#Titulo_Principal{
+    text-align: center;
+    top: 1%;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-size:500%;
+}
+
+#Linha{
+    width: 600px;
+    border: 1px solid black;
+}
+
+/*Construção da caixa de texto Classe*/
+.Titulo_CT{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+}
+
+.Texto_CT{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 200%;
+}
+
+.Caixa_De_Texto{
+    margin-top: 7%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0,0.9);
+    box-shadow: rgba(133, 133, 133, 0.35) 0px -50px 36px -28px inset;
+    width: 80%;
+    height: fit-content;
+    padding: 1%;
+    color: aliceblue;
+    text-align: unset;
+    border-radius: 30px;
+}
+
+#Caixa-2{
+    margin-top: 25%;
+    position: relative;
+    height: fit-content;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* acabaei copiando layout dele pra me poupar tempo */
+button{
+    position: relative;
+    left: 70%;
+    top: 20%;
+}
+
+.button-84 {
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(#464d55, #25292e);
+  border-radius: 8px;
+  border-width: 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  font-family: expo-brand-demi,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 18px;
+  height: 100px;
+  width: 600px;
+  justify-content: center;
+  line-height: 1;
+  margin-bottom: 20%;
+  outline: none;
+  overflow: hidden;
+  padding: 0 32px;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 150ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-84:hover {
+  box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+  opacity: .85;
+}
+
+.button-84:active {
+  outline: 0;
+}
+
+.button-84:focus {
+  box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+}
+
+@media (max-width: 420px) {
+  .button-84 {
+    height: 48px;
+  }
+}

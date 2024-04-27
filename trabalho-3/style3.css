@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  background-image: url("FUNDO2.jpg");
+  background-size: contain;
+  background-size: min(20%, 20%);
+}
+/*css das fontes*/
+
+/*Style do NAV-MENU*/
+#Nav_Menu {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: rgba(133, 133, 133, 0.35) 0px -50px 36px -28px inset;
+}
+
+ul li {
+  position: relative;
+  display: inline;
+}
+ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+  display: inline-block;
+  /*Visual do LINk*/
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: rgba(255, 255, 255, 0.35) 0px -50px 36px -40px inset;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  margin-inline: 2px;
+  border-radius: 10px;
+}
+/*CSS RESPONSAVEL PELA ANIMAÇÂO */
+ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: rgba(255, 0, 0, 0.8) 0px -50px 40px -30px inset;
+  transition: 300ms ease;
+}
+/*fim do Style do NAV-MENU*/
+
+/*estilo dos cardapios*/
+
+.Cards {
+  display: flex; /* Torna o container flexível */
+  justify-content: space-between; /* Distribui o espaço entre as divs */
+  gap: 50px; /* Espaço de 20px entre as divs */
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: start;
+  width: 45%;
+  margin-left: 1%;
+}
+
+.Card-1,
+.Card-2,
+.Card-3 {
+  flex: 1; /* Faz com que cada div tenha a mesma largura */
+  background-color: #222222;
+  box-shadow: rgba(146, 146, 146, 0.35) 0px -50px 36px -28px inset;
+  padding: none;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#Titulo_Card {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  position: relative;
+  text-align: start;
+}
+
+#Titulo_UL {
+  position: relative;
+  text-align: start;
+}
+
+.MenuLi {
+  margin-top: 10px;
+  list-style: none;
+  display: list-item;
+  position: relative;
+}
+
+.MenuButton {
+  background-color: #4e4e4e;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  color: white;
+  border: none;
+  width: 80%;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.MenuButton:hover {
+  transition: 300ms ease;
+  background-color: rgba(30, 30, 30, 0.9);
+  box-shadow: rgba(255, 0, 0, 0.8) 0px -50px 40px -30px inset;
+}
+
+.MenuButton:active {
+  position: relative;
+  top: 4px;
+}
+
+/*estilo dos cardapios*/
+
+/*Inicio do css das fontes*/
+
+#Titulo_Principal {
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-size: 100px;
+  margin-left: 1%;
+}
+
+/*css da linha*/
+
+#Linha {
+  position: fixed;
+  bottom: 75%;
+  width: 50%;
+}
+
+/*css do Titulo Culinaria ele tera uma animação por isso ele esta dentro de um span*/
+
+/* parte estetica do span  onde o titutlo "culinaria" se encontra*/
+#titulo_2 {
+  animation: minhaAnim 1s ease-out 0s 1 normal forwards;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Outfit", sans-serif;
+  color: white;
+  margin-left: 2%;
+  position: fixed;
+}
+
+/*Setando a animação*/
+@keyframes minhaAnim {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+    filter: drop-shadow(1rem -1rem 1rem red);
+  }
+
+  40% {
+    opacity: 0.2;
+    filter: drop-shadow(1rem 0rem 1rem rgb(156, 0, 0));
+  }
+
+  45% {
+    opacity: 0.3;
+    filter: drop-shadow(1rem 1rem 1rem rgb(156, 0, 0));
+  }
+
+  50% {
+    opacity: 0.5;
+    filter: drop-shadow(0rem 1rem 1rem rgb(156, 0, 0));
+  }
+
+  80% {
+    opacity: 0.6;
+    filter: drop-shadow(-1rem 1rem 1rem rgb(156, 0, 0));
+  }
+
+  85% {
+    opacity: 0.7;
+    filter: drop-shadow(-1rem 0rem 1rem rgb(156, 0, 0));
+  }
+
+  90% {
+    opacity: 0.8;
+    filter: drop-shadow(-1rem -1rem 1rem rgb(156, 0, 0));
+  }
+
+  95% {
+    opacity: 0.85;
+    filter: drop-shadow(0rem -1rem 1rem rgb(156, 0, 0));
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: drop-shadow(0rem 0rem 1rem rgb(255, 0, 0));
+  }
+}
+
+.Mostrador {
+  position: absolute;
+  top: 110px;
+  right: 3px;
+  font-size: 18px;
+  background-color: #353535;
+  border-radius: 50px;
+  border-color: #4e4e4e;
+  width: 45%;
+  height: 90%;
+  color: white;
+  padding: 10px;
+}
+
+.container {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0.5fr 0.5fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "img-area"
+    "text-area";
+}
+
+.img-area{
+  margin: 5%;
+  background-color: aliceblue;
+  grid-area: img-area;
+  border-radius: 15px;
+}
+
+
+.text-area{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  text-align: justify;
+  background-color:#4e4e4e;
+  grid-area: text-area;
+  margin: 5%;
+  border-radius: 15px;
+  padding: 2%;
+}
+
+.img{
+  background-image: url("Käsekrainer.jpg");
+}

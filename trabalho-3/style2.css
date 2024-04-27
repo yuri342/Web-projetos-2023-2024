@@ -1,0 +1,115 @@
+body{
+    background-color: black;
+    margin: 0;
+    background-image: url(674983.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+/*css da barra de rolagen usando webkit caso rodar em mozila teria que arrumar para -moz, Opera = -o e -ms para explorer.*/
+body::-webkit-scrollbar {     /*os dois pontos para especificar qual barra mudar caso tivese mais elementos que usasem de barra de rolagem. e é padrao especificar senão nao funciona*/
+  width: 12px;               /* LARGURA DA SCROLLBAR */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(46, 46, 46);        /* fundo da barra */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(51, 51, 51);    /* cor do element to que mexe quando a barra rola */
+  border-radius: 10px;       /* borda do elemento */
+  border: 3px solid rgb(77, 77, 77);  /* cor e estilo da borda */
+}
+
+/*fim do css da barra*/
+/*Style do NAV-MENU*/
+
+
+
+/*Style do NAV-MENU*/
+
+ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0,0.9);
+    box-shadow: rgba(133, 133, 133, 0.35) 0px -50px 36px -28px inset;
+ }
+ 
+ ul li {
+   position: relative;
+   display: inline;
+ }
+ ul li a{
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 10px 20px;
+   display: inline-block;
+   /*Visual do LINk*/
+   background-color: rgba(0, 0, 0,0.9);
+   box-shadow: rgba(184, 219, 252, 0.35) 0px -50px 36px -28px inset;
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   border-bottom: 3px solid rgb(184, 219, 252);
+   margin-inline: 2px;
+   border-radius: 10px;
+ }
+ 
+ ul  li a:hover{
+   background-color: rgba(0, 0, 0,0.9);
+   box-shadow: rgba(184, 219, 252, 0.80) 0px -50px 40px -30px inset;
+   transition: 300ms ease;
+ }
+ /*Style do NAV-MENU*/
+
+
+#Linha{
+    width: 600px;
+    border: 1px solid black;
+}
+
+ #Titulo_Principal{
+    text-align: center;
+    top: 1%;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-size:500%;
+    color: rgb(255, 255, 255)
+}
+
+#Linha{
+    width: 600px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+/*Construção da caixa de texto Classe*/
+.Container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.Titulo_CT{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+}
+
+.Texto_CT{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 200%;
+}
+
+.Caixa_De_Texto{
+    margin-top: 7%;
+    margin-inline: 2%;
+    width: 50%;
+    height: auto;
+    background-color: rgba(0, 0, 0,0.9);
+    box-shadow: rgba(133, 133, 133, 0.35) 0px -50px 36px -28px inset;
+    height: fit-content;
+    padding: 1%;
+    color: aliceblue;
+    text-align: unset;
+    border-radius: 30px;
+}

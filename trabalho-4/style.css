@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1,p{
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+#sec-1{
+    position: relative;
+    height: 75vh;
+    width: 100%;
+    background-image: url(BG.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#sec-2{
+    position: relative;
+    height: 25vh;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    box-shadow: 0px -32px 40px 20px rgba(27, 27, 27, 1);
+    color: white;
+    
+}
+
+#title,#SubT{
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: rgb(207, 78, 2);
+    top: 40%;
+    font-size: 100px;
+    text-shadow: -5px 5px rgb(0, 0, 0);
+    letter-spacing: 5px;
+}
+
+#Text_box{
+    width: 200px;
+    position: absolute;
+    text-align: justify;
+    width: 50%;
+    top: 60%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+#title-2{
+    letter-spacing: 5px;
+    margin: 0;
+    font-size: 80px;
+    text-align: center;
+}
+
